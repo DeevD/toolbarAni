@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ToolbarSample</string>
+    <string name="dsaf">The child is the view that enhances behavior, dependency who will serve as a trigger to interact with the child element. See this example, the child would be the ImageView and the dependency would be the Toolbar, in that way, if the Toolbar moves, the ImageView will move too.
+
+Now that we have defined the concepts we can speak of implementation, the first step is to extend of: CoordinatorLayout.Behavior, been T the class that belongs the view that interests us coordinate, in this case an ImageView, after that we must override these methods:
+The child is the view that enhances behavior, dependency who will serve as a trigger to interact with the child element. See this example, the child would be the ImageView and the dependency would be the Toolbar, in that way, if the Toolbar moves, the ImageView will move too.
+
+
+
+
+
+
+
+Now that we have defined the concepts we can speak of implementation, the first step is to extend of: CoordinatorLayout.Behavior, been T the class that belongs the view that interests us coordinate, in this case an ImageView, after that we must override these methods:
+
+layoutDependsOn
+onDependentViewChanged
+The method: layoutDependsOn will be called every time that something happens in the layout, what we must do to return true once we identify the dependency, in the example, this method is automatically fired when the user scrolls (because the Toolbar will move), in that way we can make our child sight react accordingly.
+
+
+layoutDependsOn
+onDependentViewChanged
+The method: layoutDependsOn will be called every time that something happens in the layout, what we must do to return true once we identify the dependency, in the example, this method is automatically fired when the user scrolls (because the Toolbar will move), in that way we can make our child sight react accordingly.
+
+</string>
+</resources>
